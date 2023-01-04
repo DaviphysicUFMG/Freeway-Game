@@ -1,7 +1,10 @@
-let lenCow = 30; let heiCow = 30;
+let lenCow = 30;
+let heiCow = 30;
 
 let y0Cow = 380;
-let xCow = 200; let yCow = 380;
+let xCow = 200; 
+let yCow = 380;
+
 let vCow = 3;
 
 function moveCow(){

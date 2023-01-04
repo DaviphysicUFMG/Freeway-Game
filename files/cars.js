@@ -1,9 +1,10 @@
-let initPosSupCars = 690;
-let initPosDownCars = -60;
-let lenCar = 70; let heiCar = 40;
+let initPosSupCars = 690; // Coordenada x inicial dos carros nas pistas superiores
+let initPosDownCars = -60; // Coordenada x inicial dos carros nas pistas inferiores
+let lenCar = 70;
+let heiCar = 40;
 
-let yCar = [40, 95, 150, 210, 263, 317];
-let v0Car = [-4, -4.5, -5, 5, 4.5, 4];
+let yCar = [40, 95, 150, 210, 263, 317]; // Coordena y dos carros
+let v0Car = [-4, -4.5, -5, 5, 4.5, 4]; // velocidades base dos carros
 let xCar = [];
 let vCar = [];
 
