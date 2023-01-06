@@ -14,6 +14,7 @@ function moveCow(){
   if (keyIsDown(DOWN_ARROW) && yCow < y0Cow){
     yCow += vCow;
   }
+  makeScore();
 }
 
 function makeScore(){
@@ -22,4 +23,11 @@ function makeScore(){
     yCow = y0Cow;
     pointSound.play();
   }
+}
+
+function displayScore(){
+  rect(width/2-30, 5, 60, 27, 20);
+  textAlign(CENTER);
+  textSize(30);
+  text(score, width/2, 30);
 }

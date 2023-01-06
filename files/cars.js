@@ -1,4 +1,4 @@
-let initPosSupCars = 690; // Coordenada x inicial dos carros nas pistas superiores
+let initPosSupCars = width-10; // Coordenada x inicial dos carros nas pistas superiores
 let initPosDownCars = -60; // Coordenada x inicial dos carros nas pistas inferiores
 let lenCar = 70;
 let heiCar = 40;
@@ -32,14 +32,14 @@ function boundary(){
   for (i = 0; i < 3; i++){
     if (xCar[i] < -lenCar/1.2){
       xCar[i] = initPosSupCars;
-      vCar[i] = v0Car[i] + random(-1,2);
+      vCar[i] = v0Car[i] + random(-1,1);
       carImg[i] = random([car01Img, car02Img, car03Img]);
     }
   }
   for (i = 3; i < 6; i++){
     if (xCar[i] > width-lenCar*0.2){
       xCar[i] = initPosDownCars;
-      vCar[i] = v0Car[i] + random(-1,2);
+      vCar[i] = v0Car[i] + random(-1,1);
       carImg[i] = random([car04Img, car05Img, car06Img]);
     }
   }
